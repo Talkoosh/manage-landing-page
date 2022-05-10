@@ -1,0 +1,13 @@
+//BASE
+
+@import './base/variables';
+@import './base/mixins';
+@import './base/base';
+
+//CMPS
+
+@import './cmps/main-header';
+@import './cmps/intro';
+@import './cmps/reviews';
+@import './cmps/simplify';
+@import './cmps/footer';

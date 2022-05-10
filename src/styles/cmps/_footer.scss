@@ -1,0 +1,64 @@
+.footer {
+    background-color: rgb(19, 17, 17);
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    padding: $default-padding;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .logo-and-socials {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .socials {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .page-links {
+        display: flex;
+        justify-content: space-between;
+        gap: 150px;
+        a {
+            font-size: 14px;
+            color: white;
+            text-decoration: none;
+        }
+        .col {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &:nth-child(2) {
+                height: 60%;
+            }
+        }
+    }
+
+    .updates-and-copyrights {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        input {
+            border-radius: 100rem;
+            height: 32px;
+            border: none;
+            padding: 0 10px;
+        }
+        button {
+            @include get-started-btn;
+            box-shadow: none;
+            margin-inline-start: 5px;
+        }
+        p{
+            margin: 0;
+            color: rgb(182, 182, 182);
+            font-size: 12px;
+            align-self: flex-end;
+            
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.simplify{
+    background-color: rgb(235, 88, 62);
+    padding: $default-padding;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1{
+        font-size: 2rem;
+        color: white;
+    }
+
+    button{
+        @include get-started-btn;
+        background-color: white;
+        box-shadow: none;
+        color: rgb(235, 88, 62);
+        font-weight: bold;
+    }
+}
